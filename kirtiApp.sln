@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kirtiApp", "kirtiApp\kirtiApp.csproj", "{6A59CA57-CEC2-499D-A435-F2AE3C8E7593}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "coreApi", "..\coreApi\coreApi\coreApi.csproj", "{C12340DB-0253-4D24-9879-ABCD08AEE54B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A59CA57-CEC2-499D-A435-F2AE3C8E7593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A59CA57-CEC2-499D-A435-F2AE3C8E7593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A59CA57-CEC2-499D-A435-F2AE3C8E7593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A59CA57-CEC2-499D-A435-F2AE3C8E7593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12340DB-0253-4D24-9879-ABCD08AEE54B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12340DB-0253-4D24-9879-ABCD08AEE54B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12340DB-0253-4D24-9879-ABCD08AEE54B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12340DB-0253-4D24-9879-ABCD08AEE54B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5DDF2F23-BDA2-4D2F-8F34-03F9CE0552D1}
+	EndGlobalSection
+EndGlobal

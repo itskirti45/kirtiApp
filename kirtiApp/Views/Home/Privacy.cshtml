@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+<div class="row">
+<div class="card" style="width: 18rem;">
+    <img class=" card-img-top" src="~/css/emoji.jpg" alt="Card image cap" />
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://www.google.co.in/" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img class=" card-img-top" src="~/css/emoji.jpg" alt="Card image cap" />
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="https://www.google.co.in/" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div class="card float-end" style="width: 18rem; right;">
+    <img class=" card-img-top" src="~/css/emoji.jpg" alt="Card image cap" />
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a asp-action="AddData" asp-controller="Home" class="btn btn-primary">AddData</a>
+    </div>
+</div>
+    <div class="card float-end" style="width: 18rem; right;">
+        <img class=" card-img-top" src="~/css/emoji.jpg" alt="Card image cap" />
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a asp-action="AddData" asp-controller="Home" class="btn btn-primary">AddData</a>
+        </div>
+    </div>
+
+</div>
+<div id="sidebar" class="nav-collapse hide-left-bar">
+    <!-- sidebar menu start-->
+    <div class="leftside-navigation" tabindex="5000" style="overflow: hidden; outline: none;">
+        <ul class="sidebar-menu" id="nav-accordion">
+            <li>
+                <a class="active" href="dashboard.php">
+                    <i class="fa fa-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-book"></i>
+                    <span>State</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="add-state.php">Add State</a></li>
+                    <li><a href="manage-state.php">Mange State</a></li>
+
+                </ul>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-bullhorn"></i>
+                    <span>City</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="add-city.php">Add City</a></li>
+                    <li><a href="manage-city.php">Mange City</a></li>
+
+                </ul>
+            </li>
+
+            <li>
+                <a href="manage-donor-details.php">
+                    <i class="fa fa-users"></i>
+                    <span>Reg Food Donors </span>
+                </a>
+            </li>
+            <li>
+                <a href="all-listed-food.php">
+                    <i class="icon-food"></i>
+                    <span>Listed Foods </span>
+                </a>
+            </li>
+
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-book"></i>
+                    <span>Food Requests</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="new-requests.php">New Requests</a></li>
+                    <li><a href="completed-requests.php">Picked/Take away /Completed</a></li>
+                    <li><a href="rejected-requests.php">Rejected</a></li>
+                    <li><a href="all-requests.php">All</a></li>
+
+                </ul>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-bullhorn"></i>
+                    <span>Enquiry</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="unreadenq.php">Unread Enquiry</a></li>
+                    <li><a href="readenq.php">Read Enquiry</a></li>
+
+                </ul>
+            </li>
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-bullhorn"></i>
+                    <span>Pages</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="about-us.php">About us</a></li>
+                    <li><a href="contact-us.php">Contact us</a></li>
+
+                </ul>
+            </li>
+
+            <li class="sub-menu dcjq-parent-li">
+                <a href="javascript:;" class="dcjq-parent">
+                    <i class="fa fa-files-o"></i>
+                    <span>Reports</span>
+                    <span class="dcjq-icon"></span>
+                </a>
+                <ul class="sub" style="display: none;">
+                    <li><a href="report-donated-food.php">Report of donated Food</a></li>
+                    <li><a href="report-food-donor.php">Report of Reg Food Donor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="search.php">
+                    <i class="fa fa-search"></i>
+                    <span>Search Listed Food </span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- sidebar menu end-->
+    <div id="ascrail2000" class="nicescroll-rails" style="width: 3px; z-index: auto; cursor: default; position: absolute; top: 0px; left: 237px; height: 730px; display: none; opacity: 0;"><div style="position: relative; top: 0px; float: right; width: 3px; height: 0px; background-color: rgb(139, 92, 126); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div id="ascrail2000-hr" class="nicescroll-rails" style="height: 3px; z-index: auto; top: 727px; left: 0px; position: absolute; cursor: default; display: none; opacity: 0;"><div style="position: relative; top: 0px; height: 3px; width: 0px; background-color: rgb(139, 92, 126); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px; left: 0px;"></div></div>
+</div>

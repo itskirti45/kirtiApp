@@ -1,0 +1,82 @@
+﻿@model kirtiApp.ViewModel.EmployeeViewModel
+@{
+    ViewData["Title"] = "AddData";
+}
+
+<h1>AddData</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3 border border-info rounded p-lg-5 pr pb-5">
+            <form asp-action="AddData" asp-controller="Home" method="post" enctype="multipart/form-data">
+                <input type="hidden" asp-for="Id"/>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="text" asp-for="Mobile" class="form-control" />
+                    <span asp-validation-for="Mobile" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Address</label>
+                   
+                    
+                   <select asp-for="Address" class="form-control">
+                        <option>---Select City---</option>
+                        @foreach(var item in Model.AddressList)
+                        {
+                            <option>@item.Addresses</option>
+                        }
+                    
+                    </select> 
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Languages</label><br />
+                    <input type="checkbox" asp-for="C" />
+                    <label>C</label>
+                    <input type="checkbox" asp-for="Python" />
+                    <label>Python</label>
+                    <input type="checkbox" asp-for="Cshrap" />
+                    <label>Cshrap</label>
+                    <input type="checkbox" asp-for="Java" />
+                    <label>Java</label>
+                    <input type="checkbox" asp-for="PHP" />
+                    <label>PHP</label>
+                    <input type="checkbox" asp-for="Angular" />
+                    <label>Angular</label>
+                    <span asp-validation-for="C" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <input type="radio" asp-for="Gender"  value="Male" name="Gender"/>
+                    <label>Male</label>
+                    <input type="radio" asp-for="Gender"  value="Female" name="Gender"  />
+                    <label>Female</label>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>JoiningDate</label>
+                    <input type="date" asp-for="JoiningDate" placeholder="DD/MM/YYYY" class="form-control" />
+                    <span asp-validation-for="JoiningDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>ImagePath</label>
+                    <input type="file" asp-for="ImagePath" name="file" class="form-control" />
+                    <span asp-validation-for="ImagePath" class="text-danger"></span>
+                </div>
+                <button type="submit">AddData</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<partial name="_ValidationScriptsPartial"></partial>
+

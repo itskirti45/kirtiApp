@@ -1,0 +1,74 @@
+﻿@model kirtiApp.Models.Employee
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="container">
+    <div class=" row">
+        <div class="col-6 offset-3 border border-info bg-gradient rounded p-lg-5 pr pb-5">
+            <h1>Details</h1>
+       
+        <dl>
+            <dt>Image</dt>
+            <dd> <img src="~/image/@Model.ImagePath" height="50px" width="50px" /></dd>
+            <dt>ID</dt>
+            <dd>@Model.Id</dd>
+            <dt>Name</dt>
+            <dd> @Model.Name </dd>
+            <dt>Email</dt>
+            <dd>@Model.Email </dd>
+            <dt>Mobile</dt>
+            <dd>@Model.Mobile</dd>
+            <dt>Address</dt>
+            <dd>@Model.Address </dd>
+            <dt>Languages</dt>
+                <dd>
+                    @if (@Model.C == true)
+                    {
+                          <span>C,</span>  
+                        }
+                    @if (@Model.Python == true)
+                    {                         
+                        <span>Python,</span>
+                    }
+                    @if (Model.Cshrap == true)
+                    {
+                        <span>Cshrap,</span>
+                    }
+                    @if (Model.Java == true)
+                    {
+                        <span>Java,</span>
+                    }
+                    @if (Model.PHP == true)
+                    {
+                        <span>PHP,</span>
+                    }
+                    @if (Model.Angular == true)
+                    {
+                        <span>Angular</span>
+                    }
+                </dd>
+            <dt>Gender</dt>
+            <dd>@Model.Gender</dd>
+            <dt>Joining Date</dt>
+            <dd>@Model.JoiningDate </dd>
+      
+           
+        </dl>
+    
+
+
+    
+                
+
+         <div>
+            <a asp-action="Dashboard" asp-controller="Home" class="btn btn-info">Back</a>
+            <a asp-action="Edit" asp-controller="Home" asp-route-Id="@Model.Id" class="btn btn-warning">Edit</a>
+         </div>
+
+
+        </div>
+    </div>
+</div>
+   
